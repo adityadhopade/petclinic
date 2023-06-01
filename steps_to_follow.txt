@@ -1,0 +1,22 @@
+Tomcat version used is 9.0.65 here
+
+tar -xvf -- It is used for extract
+
+
+Refer the installations script repository for the set of commands
+
+
+NOTE: we need to add the artifactory of the petclinic project into the webappps folder to make it visible on the dashboard 
+
+
+When done by admin prievlage
+// Copy from where the tar file is located and add the jar/war file to the webapp folder
+cp /opt/apache-tomcat-9.0.65/conf/petclinic/target/petclinic.war /opt/apache-tomcat-9.0.65/webapps/
+
+
+
+When done by some other user privelages
+
+We need to add the ubuntu user the access to the apache-tomcat-folder recursively
+
+sudo chown -r ubuntu apache-tomcat-9.0.65.tar.gz
